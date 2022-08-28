@@ -1,0 +1,71 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="profile">
+              <img src="" alt="">
+              <div class="role">
+              <p></p>
+              <span class="role"></span>
+              </div>
+            </div>
+            <a routerLink="/formateur/acceuil">
+                <li routerLinkActive="active" class="accueil">
+                  <span class="material-symbols-outlined">menu</span>
+                  <p>page d'acceuil</p>
+                </li> 
+            </a>
+             
+             <div class="separator"></div>
+             
+             <ul>
+                <a routerLink="/formateur/profile" routerLinkActive="active"  > <li routerLinkActive="active"> <span class="material-symbols-outlined">
+                     account_circle
+                     </span>
+                     <P>Mon profile</P>
+                 </li></a>
+             
+                 <a routerLink="/formateur/mesformations"  > <li routerLinkActive="active"> <span class="material-symbols-outlined">
+                     groups
+                     </span>
+                     <P>Mes formateurs</P>
+                 </li></a>
+             
+                 <a routerLink=""  > <li > <span class="material-symbols-outlined">
+                     query_stats
+                     </span>
+                     <P>suivi de progression</P>
+                 </li></a>
+             
+             </ul>
+
+             <div class="bottomdiv">
+
+               <div class="separator bottom"></div>
+
+             <div class="logout">
+                
+                <span class="material-symbols-outlined">logout</span>
+                <p>Déconnection</p>
+              </div>
+            </div>
+        </div>
+        
+        <div class="content">
+           <router-outlet></router-outlet>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>

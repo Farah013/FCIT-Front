@@ -1,0 +1,35 @@
+<div class="formation">
+    <div class="title">
+     <h3>{{title}}</h3>  
+     <div class="show-hide" *ngIf="!eval">
+        <div class="droite" [ngClass]="done ? 'modif2' :''" >
+            <div [ngClass]=" done === false  ? 'orange' : 'green' " class="notifier"></div>
+            <p *ngIf="!done"> Evaluation non encore soumise </p>
+            <p *ngIf="done"> Evaluation soumise </p>
+        </div>
+    </div>
+    </div>
+    <div class="bottomside">
+    <div class="infos">
+        <div class="info">
+            <p>Date de la formation :</p>
+            <p class="gras">{{dates}}</p>
+        </div>
+       <div class="info">
+            <p>Nom de participants :</p>
+            <p class="gras">{{nombrep}}</p>
+        </div>
+    
+    </div>
+    <div class="show-hide" *ngIf="!eval">
+    <div  class="buttons" [ngClass]="done ? 'modif' :''">
+        <a *ngIf="!done" ><span class="evaluation" (click)="goToEval()" >Evaluer les participants</span></a>
+        <a ><span class="consulter" (click)="goToConsulte()">Consulter la fiche de la formations</span></a>
+    </div>
+    </div>
+    <div class="members" *ngIf="eval">
+        <p>participant Evaluer </p>
+        <p class="nombre">{{nombreval}}/{{nombrep}}</p>
+    </div>
+</div>
+</div>

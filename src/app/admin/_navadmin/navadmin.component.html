@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar fixed-menu">
+        <div class="profile">
+          <img src="" alt="" />
+          <div class="role">
+            <p></p>
+            <span class="role"></span>
+          </div>
+        </div>
+        <a routerLink="/admin/home">
+          <li routerLinkActive="active" class="accueil">
+            <span class="material-symbols-outlined">menu</span>
+            <p>page d'acceuil</p>
+          </li>
+        </a>
+
+        <div class="separator"></div>
+
+        <ul>
+          <a routerLink="/admin/profile" routerLinkActive="active">
+            <li class="hover" routerLinkActive="active">
+              <span class="material-symbols-outlined"> account_circle </span>
+              <P>Mon profile</P>
+            </li></a
+          >
+
+          <a routerLink="/admin/formateurs">
+            <li class="hover" routerLinkActive="active">
+              <span class="material-symbols-outlined"> groups </span>
+              <P>liste des formateurs</P>
+            </li></a
+          >
+
+          <a (click)="expand()">
+            <li class="hover" [ngClass]="active ? 'active' : ''">
+              <span class="material-symbols-outlined"> view_list </span>
+              <P>liste des formations</P>
+              <span *ngIf="active" class="material-symbols-outlined">
+                expand_more
+              </span>
+            </li></a
+          >
+          <div class="drop" *ngIf="active">
+            <a routerLink="/admin/formationplanifier">
+              <li routerLinkActive="choosen">
+                <p>Formation planifier</p>
+              </li>
+            </a>
+            <a routerLink="/admin/formationpassee">
+              <li routerLinkActive="choosen">
+                <p>Formation passée</p>
+              </li>
+            </a>
+          </div>
+
+          <a routerLink="">
+            <li class="hover">
+              <span class="material-symbols-outlined"> query_stats </span>
+              <P>suivi de progression</P>
+            </li></a
+          >
+        </ul>
+
+        <div class="bottomdiv">
+          <div class="bottom"></div>
+
+          <div class="logout">
+            <span class="material-symbols-outlined">logout</span>
+            <p>Déconnection</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </body>
+</html>

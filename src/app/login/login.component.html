@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <div class="content">
+      <p class="title">Identifiez-vous</p>
+      <div class="buttons">
+        <mat-form-field appearance="fill">
+          <mat-label>Login</mat-label>
+          <input [(ngModel)]="login" matInput (keyup)="getUsersByEmail()" />
+          <mat-hint *ngIf="firstNameAutofilled">Autofilled!</mat-hint>
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input [(ngModel)]="password" matInput />
+          <mat-hint *ngIf="lastNameAutofilled">Autofilled!</mat-hint>
+        </mat-form-field>
+      </div>
+
+      <p class="mdp">mot de passe oublier</p>
+      <button mat-button (click)="logit()" class="btn-shape">
+        se connecter
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,117 @@
+$titletext:#00affa;
+$navbackground :#162033;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.popup{
+ height:670px;
+
+h3{
+    color:$navbackground;
+    font-weight: 500;
+}
+.title{
+    color:$navbackground;
+    margin:0 0 0 42%;
+    p{
+        margin:0 0 5px 50px;
+    }
+    h1{
+    font-weight: 600;
+    color:$titletext;
+    }
+}
+.container{
+    margin:35px 0 0 0 ;
+    display:flex;
+    .evaluationcomportemental{
+        border-radius: 4px;
+        margin: 20px 10px 10px 0px ;
+        padding:15px 25px 15px 25px;
+        width:45%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        &::before{
+            content:'Evaluation comportemental';
+            position:absolute;
+            font-weight: 800;
+            margin:-45px 0 0 -22px;
+            color:$navbackground;
+        }   
+    
+    }
+    .evaluationtech{
+        border-radius: 4px;
+        margin: 20px 10px 10px 25px ;
+        padding:15px 15px 15px 15px;
+        width:45%;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        &::before{
+            content:'Evaluation technique';
+            position:absolute;
+            font-weight: 800;
+            margin:-45px 0 0 -16px;
+            color:$navbackground;
+        }   
+    }
+  .groups{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        .group{
+            margin:20px 0 20px 0px ;
+            display:flex;
+        }
+        }
+    
+    .group{
+      margin: 8px 0 0 5px;
+      display:grid;
+      grid-template-columns: 2fr 1fr ;
+        p{
+            font-size: small;
+            color:gray;
+            margin-right:14px;
+        }
+        
+        }
+   input{
+    height:100px;
+    width:500px;
+    font-size: small;
+    font-weight: 300;
+    border-radius: 2px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding:0 0 0px 10px ;
+    outline: none;
+   }
+    #inputcp{
+        height:170px;
+    }
+
+   .avis{
+
+    margin:35px 0 0 0 ;
+   
+}
+
+}
+.btn{
+    position:relative;
+    bottom:-15px;
+    left:42%;
+    border-radius:10px;
+    padding:10px 25px;
+    font-weight: 550;
+    font-size: 12px;
+    background-color:#b7b7b7;
+    color:white;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color:$titletext;
+    }
+}
+}

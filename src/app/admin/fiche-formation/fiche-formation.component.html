@@ -1,0 +1,56 @@
+<div>
+  <h4 class="modal-title title-style" id="modal-basic-title ">
+    Fiche de consultation
+  </h4>
+</div>
+<div class="modal-body">
+  <form>
+    <input
+      class="form-control me-2 search-style"
+      type="search"
+      aria-label="Search"
+      name="title"
+      id="title"
+      [(ngModel)]="formation.Titre"
+      disabled
+    />
+    <table class="table-style">
+      <tr>
+        <td class="header-title">Détails de la formation</td>
+        <td class="header-title participant-style">Liste des participants</td>
+      </tr>
+      <tr>
+        <td>
+          <app-details-formation
+            [affiche]="1"
+            [DateDeb]="formation.DateDeb"
+            [DateFin]="formation.DateFin"
+            [Lieu]="formation.Lieu"
+            [Mode]="formation.Mode"
+            [Formateur]="formation.Formateur"
+          ></app-details-formation>
+        </td>
+        <td rowspan="3">
+          <app-liste-participants
+            [ListeParticipant]="participants"
+            [affiche]="1"
+          ></app-liste-participants>
+        </td>
+      </tr>
+      <tr>
+        <td class="header-title">Objectifs pédagogiques</td>
+      </tr>
+      <tr>
+        <td>
+          <app-objectifs-pedagogiques
+            [affiche]="1"
+            [ListeObj]="objectifs"
+          ></app-objectifs-pedagogiques>
+        </td>
+      </tr>
+    </table>
+    <span class="btn-style">
+      <button class="annuler" (click)="close()" mat-button>Annuler</button>
+    </span>
+  </form>
+</div>

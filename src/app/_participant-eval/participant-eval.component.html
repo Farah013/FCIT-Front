@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="header">
+        <ul>
+           <li>{{name}}</li>
+           <li>{{identifiant}}</li>
+           <li ><span [ngClass]="etat === 'évaluer' ? 'green' : 'orange' ">{{etat}}</span></li>
+           <li >{{dmaj}}</li>
+           <li> <a (click)="openDialog()"> <span *ngIf="etat !== 'évaluer'"> Evaluation participantp</span> <span class="modif" *ngIf="etat === 'évaluer'">modifier Evaluation</span> </a> <span id="icon" (click)="openDialog()" *ngIf="etat === 'évaluer'" class="material-symbols-outlined">edit</span></li>
+        </ul>
+     </div>
+</div>

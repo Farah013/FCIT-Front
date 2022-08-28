@@ -1,0 +1,14 @@
+
+<h2>Mes formations</h2>
+<div class="recherche">
+<span class="material-symbols-outlined">search</span>
+<input [(ngModel)]="cherche" type="text" placeholder="chercher des formations">
+</div>
+<div class="formations">
+
+
+    <app-formation *ngFor="let formation of formations" [title]="formation.title" [done]="formation.done" [dates]="formation.date" 
+      [nombrep]="formation.nombreparticipant" [id]="formation.formationid"></app-formation>
+    
+
+</div>

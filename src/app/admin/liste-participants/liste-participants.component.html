@@ -1,0 +1,39 @@
+<input
+  type="file"
+  (change)="onFileChange($event)"
+  multiple="false"
+  *ngIf="affiche == 0"
+/>
+<table class="table table-striped">
+  <tbody>
+    <tr *ngFor="let row of data">
+      <td *ngFor="let val of row">
+        {{ val }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table
+  class="table table-striped"
+  *ngIf="affiche == 1"
+  style="width: max-content"
+>
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Participant</th>
+      <th scope="col">Identifiant</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let p of ListeParticipant; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>
+        {{ p.participant }}
+      </td>
+      <td>{{ p.identifiant }}</td>
+      <td>{{ p.email }}</td>
+    </tr>
+  </tbody>
+</table>

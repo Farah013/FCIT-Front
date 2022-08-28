@@ -1,0 +1,25 @@
+<h2>listes des formations planifier</h2>
+
+<div class="recherche">
+  <button class="ajouter" (click)="ajouter()" mat-button>
+    ajouter une formation
+  </button>
+  <span class="material-symbols-outlined">search</span>
+  <input
+    [(ngModel)]="cherche"
+    type="text"
+    placeholder="chercher des formations"
+  />
+</div>
+<div class="formations" *ngFor="let formation of formationList">
+  <app-formationadmin
+    *ngIf="formation.Done != 1"
+    [idFormation]="formation.idFormation"
+    [titleF]="formation.Titre"
+    [dateF]="formation.DateDeb"
+    [nbreP]="formation.NbreParticipants"
+    [formateur]="formation.Formateur"
+    [Eval]="formation.Eval"
+    [Done]="formation.Done"
+  ></app-formationadmin>
+</div>

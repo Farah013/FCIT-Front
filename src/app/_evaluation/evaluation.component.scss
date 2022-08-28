@@ -1,0 +1,94 @@
+$titletext:#00affa;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+    margin:30px 0 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.container{
+    display:flex;
+    .participants{
+        &::before{
+            content:'Evaluation individuel';
+            position:absolute;
+            font-weight: 800;
+            margin:25px 0 0 20px;
+            color:$titletext;
+        }
+    .header{
+        margin:70px 30px 0 20px;
+        background-color:$titletext;
+        height:50px;
+        line-height: 50px;
+        width:800px;
+        ul{
+            list-style: none;
+            display:flex;
+            li{
+                font-weight: 600;
+                color:white;
+                flex-wrap: nowrap;
+                white-space: nowrap;
+                margin: 0  65px 0 0 ;
+            }
+        }
+    }
+    .details{
+        height:370px;
+        width:820px;
+        overflow:hidden;
+        overflow-y: scroll;
+    }
+}
+    .evaluation{
+        &::before{
+            content:'Evaluation individuel';
+            position:absolute;
+            font-weight: 800;
+            margin:-42px 0 0 0;
+            color:$titletext;
+        }
+        margin:70px  0 0 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        background-color:white;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        width:28%;
+        p{
+            margin:20px 0 0 18px; 
+        }
+        textarea{
+           margin:8px 0 0 18px;
+           font-size: small;
+           font-weight: 300;
+           resize: none;
+           border-radius: 2px;
+           border: none;
+           box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+           padding:15px 0 0 10px;
+           outline: none;
+        }
+    }
+    .btn{
+        position:absolute;
+        bottom:18px;
+        right:60px;
+        border-radius:10px;
+        padding:5px 20px;
+        font-weight: 550;
+        font-size: 12px;
+        background-color:#b7b7b7;
+        color:white;
+        text-decoration: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background-color:#a7a6a6;
+        }
+
+    }
+}

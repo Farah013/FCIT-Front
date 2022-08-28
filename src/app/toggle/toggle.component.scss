@@ -1,0 +1,38 @@
+.red{
+    background-color:rgb(233, 95, 95);
+    width:28px;
+   
+}
+.green{
+    background-color:rgb(97, 233, 95);
+    width:28px;
+}
+.yellow{
+    background-color:rgb(205, 232, 73);
+    width:28px;
+}
+.doura2{
+ margin:0px 0 0 23px ;
+}
+.doura3{
+    margin:0px 0 0 50px ;
+
+}
+.toggle{
+    height:20px;
+    width:70px;
+    border-radius: 50px;
+    .doura{
+        transition:all 0.4s ease-in-out;
+        height:26px;
+        width:26px;
+        background-color: aliceblue;
+        border-radius: 100%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        position: relative;
+        top:-4px;
+        left:-2px;
+        cursor: pointer;
+
+    }
+}

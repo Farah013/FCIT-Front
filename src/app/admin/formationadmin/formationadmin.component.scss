@@ -1,0 +1,224 @@
+$titletext: #00affa;
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+.modif {
+  padding: 0 0 0 140px;
+}
+.modif2 {
+  padding: 0 0 0 65px;
+}
+.orange {
+  background: #f6b26b;
+}
+.green {
+  background: #6aa84f;
+}
+.formation {
+  margin: 10px 0 0 20px;
+  height: 150px;
+  width: 95%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  .title {
+    display: flex;
+    margin: 0px 0 -13px 20px;
+    h3 {
+      margin: 15px 0 0 0;
+      color: $titletext;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .droite {
+      margin: 16px 0 0 0;
+      position: relative;
+      left: 710px;
+      display: flex;
+      flex-wrap: wrap;
+      line-height: 8px;
+      font-size: small;
+      color: gray;
+      .notifier {
+        margin: 0px 6px 0 0;
+        height: 8px;
+        width: 8px;
+        border-radius: 100%;
+      }
+    }
+  }
+  .bottomside {
+    display: flex;
+
+    .infos {
+      margin: 25px 0 0 0;
+      .info {
+        color: gray;
+        margin: -5px 0 0 20px;
+        display: flex;
+        font-size: smaller;
+
+        font-weight: 500;
+        .gras {
+          color: black;
+          font-weight: 600;
+        }
+      }
+      .info:nth-child(3) {
+        margin: 7px 0 0 20px;
+      }
+    }
+    .buttons {
+      position: relative;
+      margin-right: 1%;
+      margin: 45px 0 0 0;
+      display: flex;
+      a {
+        text-decoration: none;
+      }
+      .evaluation {
+        font-size: x-small;
+        margin: 0 10px 0 0;
+        color: white;
+        height: 10px;
+        padding: 8px 15px;
+        width: auto;
+        background-color: $titletext;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        &:hover {
+          background-color: hsl(217, 55%, 52%);
+        }
+      }
+      .consulter {
+        font-size: x-small;
+        position: relative;
+        left: 98%;
+        bottom: 48px;
+        margin: 0 10px 0 0;
+        color: black;
+        height: 10px;
+        padding: 8px 15px;
+        width: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        &:hover {
+          background-color: rgb(237, 235, 235);
+        }
+      }
+    }
+  }
+  .members {
+    display: flex;
+    font-size: small;
+    position: absolute;
+    right: 100px;
+    margin: 35px 0 0 0;
+    p {
+      margin: 0 8px 0 0;
+      font-size: small;
+      color: rgb(150, 145, 145);
+    }
+    .nombre {
+      font-weight: 700;
+
+      color: gray;
+    }
+  }
+
+  .fiche {
+    //display: flex;
+
+    .infos {
+      margin: 25px 0 0 0;
+      .info {
+        color: gray;
+        margin: -5px 0 0 20px;
+        display: flex;
+        font-size: smaller;
+
+        font-weight: 500;
+        .gras {
+          color: black;
+          font-weight: 600;
+        }
+      }
+      .info:nth-child(3) {
+        margin: 7px 0 0 20px;
+      }
+    }
+    .buttons {
+      .btn {
+        border: none;
+        background-color: white;
+      }
+      .btn-eval {
+        border: none;
+        background-color: white;
+      }
+      .consulter {
+        font-size: x-small;
+        position: relative;
+        // left: 98%;
+
+        top: 15px;
+        margin: 0 10px 0 0;
+        color: black;
+        height: 10px;
+        padding: 8px 15px;
+        width: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        &:hover {
+          background-color: rgb(237, 235, 235);
+        }
+      }
+    }
+  }
+}
+.modif {
+  padding: 0 0 0 140px;
+}
+.modif2 {
+  padding: 0 0 0 65px;
+}
+.orange {
+  background: #f6b26b;
+}
+.green {
+  background: #6aa84f;
+}
+.droite {
+  margin: 16px 0 0 0;
+  position: relative;
+  left: 710px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 8px;
+  font-size: small;
+  color: gray;
+  .notifier {
+    margin: 0px 6px 0 0;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+  }
+}
+.dot_orange {
+  height: 10px;
+  width: 10px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 60%;
+}
+.dot_green {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 60%;
+}

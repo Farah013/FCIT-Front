@@ -1,0 +1,16 @@
+<div
+  class="toggle"
+  [ngClass]="niveau === 1 ? 'red' : niveau === 2 ? 'yellow' : 'green'"
+>
+  <div
+    class="doura"
+    [ngClass]="niveau === 1 ? 'doura' : niveau == 2 ? 'doura2' : 'doura3'"
+    disabled
+  ></div>
+</div>
+<!---
+<mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color" class="toggle" >
+    <mat-button-toggle value="red" class=""></mat-button-toggle>
+    <mat-button-toggle value="green" class=""></mat-button-toggle>
+    <mat-button-toggle value="blue" class=""></mat-button-toggle>
+  </mat-button-toggle-group>--->

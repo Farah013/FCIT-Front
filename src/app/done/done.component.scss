@@ -1,0 +1,42 @@
+$titletext:#00affa;
+.container{
+    height:30vh;
+    width:400px;
+.doura{
+margin:75px 0 20px 44%;
+ height: 60px  ; 
+ width:60px;
+ color:white;
+ border-radius:100%;
+ background-color: rgb(63, 182, 27);
+
+}
+h1{
+    font-weight: 500;
+    margin:0 0 50px 25px;
+}
+.material-symbols-outlined{
+    font-size:40px;
+    margin:10px 0 0 10px;
+
+ }
+ .btn{
+    
+    position:relative;
+    bottom:-5%;
+    left:22%;
+    border-radius:10px;
+    padding:10px 25px;
+    font-weight: 550;
+    font-size: 12px;
+    background-color:#b7b7b7;
+    color:white;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        background-color:$titletext;
+    }
+}
+}

@@ -1,0 +1,98 @@
+<div class="card" style="width: 40rem; margin-top: 1.5%">
+  <div class="card-body" *ngIf="affiche == 0">
+    <table class="test" (keyup)="saveDetails()">
+      <tr>
+        <td>Date début</td>
+        <td class="columns-style">
+          <input type="text" size="10px" id="dateDeb" />
+        </td>
+        <td style="width: 22%; padding-left: 10%">Date Fin</td>
+        <td class="columns-style">
+          <input type="text" size="10px" id="dateFin" />
+        </td>
+      </tr>
+      <tr>
+        <td>Mode</td>
+        <td class="columns-style">
+          <input type="text" size="10px" id="mode" />
+        </td>
+      </tr>
+      <tr>
+        <td>Lieu</td>
+        <td class="columns-style">
+          <input type="text" size="10px" id="lieu" />
+        </td>
+      </tr>
+      <tr>
+        <td>Formateur</td>
+        <td class="columns-style">
+          <input type="text" size="10px" id="formateur" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--Affichage-->
+  <div class="card-body" *ngIf="affiche == 1">
+    <table class="test">
+      <tr>
+        <td>Date début</td>
+        <td class="columns-style">
+          <input
+            type="text"
+            size="10px"
+            id="dateDeb"
+            [(ngModel)]="DateDeb"
+            disabled
+          />
+        </td>
+        <td style="width: 22%; padding-left: 10%">Date Fin</td>
+        <td class="columns-style">
+          <input
+            type="text"
+            size="10px"
+            id="dateFin"
+            [(ngModel)]="DateFin"
+            disabled
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Mode</td>
+        <td class="columns-style">
+          <input
+            type="text"
+            size="10px"
+            id="mode"
+            [(ngModel)]="Mode"
+            disabled
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Lieu</td>
+        <td class="columns-style">
+          <input
+            type="text"
+            size="10px"
+            id="lieu"
+            [(ngModel)]="Lieu"
+            disabled
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>Formateur</td>
+        <td class="columns-style">
+          <input
+            type="text"
+            size="10px"
+            id="formateur"
+            [(ngModel)]="Formateur"
+            disabled
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

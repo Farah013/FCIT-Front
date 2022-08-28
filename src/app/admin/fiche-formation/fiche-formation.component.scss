@@ -1,0 +1,121 @@
+$navbackground: #162033;
+$titletext: #00affa;
+* {
+  user-select: none;
+}
+.container {
+  .detailsdeformation {
+    .inputs {
+      display: flex;
+      flex-direction: blocks;
+    }
+  }
+}
+.recherche {
+  margin: 20px;
+  input {
+    height: 30px;
+    width: 94%;
+    border: none;
+    border-radius: 12px;
+    padding: 5px 0 0 50px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  span {
+    color: grey;
+    position: absolute;
+    margin: 5px 0 0 5px;
+  }
+}
+input {
+  height: 30px;
+  width: 94%;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 0 0 50px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.title-style {
+  color: #00affa;
+  margin-top: 1%;
+  margin-left: 1%;
+  font-weight: bold;
+  font-size: 20px;
+}
+.search-style {
+  border-radius: 50px;
+  font-family: "Helvetica", FontAwesome, sans-serif;
+  margin-bottom: 3%;
+  margin-left: 2.5%;
+  width: 94%;
+}
+
+.header-title {
+  font-weight: 900;
+  font-size: 20px;
+}
+td {
+  width: 70%;
+  padding-bottom: 10px;
+}
+.saveForm {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5rem;
+}
+.btn-style-save {
+  border-radius: 20px;
+  padding-left: 15px;
+  margin-left: 7rem;
+  margin-bottom: 3%;
+  margin-top: 2rem;
+  background-color: #46c4ee;
+}
+.image-save-style {
+  margin-left: 12rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.ajouter-save {
+  position: relative;
+  //top: 0px;
+  bottom: 20px;
+  right: 2%;
+  background: $titletext;
+  color: white;
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin-left: 80%;
+}
+
+.annuler {
+  position: relative;
+  top: 20px;
+
+  //right: 2%;
+  background: $titletext;
+  color: white;
+  padding: 2px 15px;
+  border-radius: 10px;
+  margin-left: 80%;
+}
+.btn {
+  //position: relative;
+  bottom: -15px;
+  left: 42%;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-weight: 550;
+  font-size: 12px;
+  background-color: #b7b7b7;
+  color: white;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: $titletext;
+  }
+}

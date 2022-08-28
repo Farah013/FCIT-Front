@@ -1,0 +1,63 @@
+<div>
+  <h4 class="modal-title title-style" id="modal-basic-title ">
+    Ajouter une formation
+  </h4>
+</div>
+<div class="modal-body">
+  <form>
+    <input
+      class="form-control me-2 search-style"
+      type="search"
+      placeholder="Nom de la formation"
+      aria-label="Search"
+      name="title"
+      id="title"
+      (keyup)="getNewTitle()"
+    />
+    <table class="table-style">
+      <tr>
+        <td class="header-title">Détails de la formation</td>
+        <td class="header-title participant-style">Liste des participants</td>
+      </tr>
+      <tr>
+        <td>
+          <app-details-formation
+            [affiche]="0"
+            (getNewDetails)="getNewDetails($event)"
+          ></app-details-formation>
+        </td>
+        <td rowspan="3">
+          {{ var1 }}
+          <app-liste-participants
+            [affiche]="0"
+            (getParticipantsList)="getParticipantsList($event)"
+          ></app-liste-participants>
+        </td>
+      </tr>
+      <tr>
+        <td class="header-title">Objectifs pédagogiques</td>
+      </tr>
+      <tr>
+        <td>
+          <app-objectifs-pedagogiques
+            [affiche]="0"
+            (getNewFormation)="getNewFormation($event)"
+          ></app-objectifs-pedagogiques>
+        </td>
+      </tr>
+    </table>
+    <span class="btn-style">
+      <button type="button" class="annuler" (click)="close()" mat-button>
+        Annuler
+      </button>
+      <button
+        type="button"
+        class="ajouter-save"
+        mat-button
+        (click)="saveFormation(); openSave()"
+      >
+        Ajouter la formation
+      </button>
+    </span>
+  </form>
+</div>

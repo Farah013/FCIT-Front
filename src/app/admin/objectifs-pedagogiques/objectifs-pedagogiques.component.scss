@@ -1,0 +1,24 @@
+$navbackground: #162033;
+$titletext: #00affa;
+* {
+  user-select: none;
+}
+input {
+  height: 30px;
+  width: 94%;
+  border: none;
+  border-radius: 12px;
+  padding: 5px 0 0 50px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.ajouter {
+  position: relative;
+  //top: 40px;
+  //right: 2%;
+  background: $titletext;
+  color: white;
+  padding: 2px 15px;
+  border-radius: 10px;
+  //margin-left: 70%;
+}

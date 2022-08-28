@@ -1,0 +1,58 @@
+<div class="card" style="width: 40rem" *ngIf="affiche == 0">
+  <div class="card-body">
+    <form (ngSubmit)="saveObectifs()" ngForm #objectifsForm>
+      <table style="width: 100%">
+        <tr>
+          <td style="width: max-content">
+            <input
+              class="form-control me-2 search-style"
+              type="search"
+              placeholder="introduisez l'objectif pédagogique .."
+              aria-label="Search"
+              id="objectif"
+              name="objs"
+            />
+          </td>
+          <td>
+            <button type="submit" class="ajouter" mat-button>Ajouter</button>
+          </td>
+        </tr>
+        <tr *ngFor="let obj of objectifFormation">
+          <td>{{ obj }}</td>
+          <td>
+            <a
+              (click)="DeleteObj(obj)"
+              style="
+                color: #00bfff;
+                cursor: pointer;
+                text-decoration: underline;
+              "
+              >Retirer de la liste</a
+            >
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+<!--Affichage des objectifs-->
+
+<div class="card" style="width: 40rem" *ngIf="affiche == 1">
+  <div class="card-body">
+    <form ngForm #objectifsForm>
+      <table style="width: 100%">
+        <tr *ngFor="let obj of ListeObj">
+          <td>
+            <input
+              class="form-control me-2 search-style"
+              name="objs"
+              disabled
+              placeholder="{{ obj.contenu }}"
+            />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>

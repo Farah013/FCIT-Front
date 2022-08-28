@@ -1,0 +1,55 @@
+<div class="popup">
+  <div class="title"></div>
+  <div class="container">
+    <div class="evaluationtech">
+      <div class="groups">
+        <div class="group">
+          <p>autonomie</p>
+          <app-toggle [niveau]="eval[0].autonomie"></app-toggle>
+        </div>
+        <div class="group">
+          <p>assimilation & réalisation</p>
+          <app-toggle [niveau]="eval[0].assimilation"></app-toggle>
+        </div>
+      </div>
+      <h3>Atteinte des objectif pedagogique</h3>
+      <ul>
+        <li *ngFor="let obj of objectifs" class="group">
+          <p>{{ obj.contenu }}</p>
+          <app-toggle [niveau]="obj.niveau"></app-toggle>
+        </li>
+      </ul>
+      <h3>point forts / Axe d'amelioration</h3>
+      <input disabled placeholder="{{ eval[0].points_forts }}" />
+    </div>
+    <div class="evaluationcomportemental">
+      <ul>
+        <li class="group">
+          <p>Organisation de son temps de travail, ponctualité, assiduité</p>
+          <app-toggle [niveau]="eval[0].organisation"></app-toggle>
+        </li>
+        <li class="group">
+          <p>Entretien et développement des compétences</p>
+          <app-toggle [niveau]="eval[0].dev_competences"></app-toggle>
+        </li>
+        <li class="group">
+          <p>Comportement</p>
+          <app-toggle [niveau]="eval[0].comportement"></app-toggle>
+        </li>
+        <li class="group">
+          <p>Participation et investissement</p>
+          <app-toggle [niveau]="eval[0].participation"></app-toggle>
+        </li>
+        <li class="group">
+          <p>Assertivité</p>
+          <app-toggle [niveau]="eval[0].assertivity"></app-toggle>
+        </li>
+      </ul>
+      <div class="avis">
+        <h3>commentaire / progression</h3>
+        <input id="inputcp" placeholder="{{ eval[0].progression }}" disabled />
+      </div>
+    </div>
+  </div>
+  <span class="btn" (click)="close()"><a>Annuler</a></span>
+</div>

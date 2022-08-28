@@ -1,0 +1,75 @@
+<div class="formation">
+  <table width="100%">
+    <tr>
+      <td>
+        <div class="title">
+          <h3>{{ titleF }}</h3>
+
+          <!--   <div class="droite"  >
+            <div  class="notifier"></div>
+            <p > Evaluation non encore soumise </p>
+            <p > Evaluation soumise </p>
+        </div>-->
+        </div>
+      </td>
+
+      <td style="width: 70%" *ngIf="Done == 1">
+        <span *ngIf="Eval != 1"
+          ><span class="dot_orange"></span> En attente d'évaluation
+        </span>
+        <span *ngIf="Eval == 1"
+          ><span class="dot_green"></span> évaluation reçue
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="2">
+        <div class="bottomside">
+          <div class="infos">
+            <div class="info">
+              <p>Date de la formation :</p>
+              <p class="gras">{{ dateF }}</p>
+            </div>
+            <div class="info">
+              <p>Nom de participants :</p>
+              <p class="gras">{{ nbreP }}</p>
+            </div>
+            <div class="info">
+              <p>Formateur :</p>
+              <p class="gras">{{ formateur }}</p>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td style="width: 70%; padding-left: 40%">
+        <div class="fiche">
+          <div class="show-hide">
+            <div class="buttons">
+              <button class="btn" (click)="afficherFiche()">
+                <span class="consulter"
+                  >Consulter la fiche de la formation</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td
+        style="width: 70%; padding-left: 40%; padding-bottom: 20px"
+        *ngIf="Eval == 1"
+      >
+        <div class="fiche">
+          <div class="show-hide">
+            <div class="buttons">
+              <button class="btn-eval" (click)="afficherEval()">
+                <span class="consulter">Consulter l'évaluation</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

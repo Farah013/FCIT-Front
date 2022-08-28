@@ -1,0 +1,45 @@
+<div class="title-style">
+  <p>Liste des Formateurs</p>
+</div>
+<table class="table table-striped" style="width: 95%; margin-left: 1%">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Spécialité</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let formateur of formateurs">
+      <th scope="row">{{ formateur.CIN }}</th>
+      <td>
+        {{ formateur.Name }}
+      </td>
+      <td>{{ formateur.Email }}</td>
+      <td>{{ formateur.Speciality }}</td>
+      <td>
+        <button
+          class="action-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+          style="color: rgb(78, 78, 252)"
+          (click)="deleteFormateur(formateur.CIN)"
+        >
+          Supprimer
+        </button>
+        -
+
+        <button
+          class="action-btn"
+          style="color: rgb(78, 78, 252)"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Modifier
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

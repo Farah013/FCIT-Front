@@ -1,0 +1,36 @@
+$navbackground :#162033;
+*{
+    user-select: none;
+}
+h2{
+   font-family: Arial, Helvetica, sans-serif;
+    color:$navbackground;
+    font-weight:700;
+    margin:20px;
+}
+.recherche{
+    margin:20px;
+    input{
+        
+        height:30px;
+        width:94%;
+        border:none;
+        border-radius:12px;
+        padding:5px 0 0 50px;
+        outline: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    span{
+        color:grey;
+        position:absolute;
+        margin:5px 0 0 5px;
+    }
+    
+ 
+}
+.formations{
+overflow: hidden;
+width:96.5%;
+height:575px;
+overflow-y: scroll;
+}
